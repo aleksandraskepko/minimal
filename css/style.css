@@ -127,5 +127,8 @@ background-color: #FFFFFF2E;
     color: #FFFFFF;
 }
 .gwe{
-    display block;
+    display: block;
+}
+.forms{
+    display: inline-block;
 }
