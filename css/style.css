@@ -118,10 +118,14 @@ background-color: #FFFFFF2E;
     font-size: 17px;
     line-height: 22px;
     color: #FFFFFF;}/* Firefox 18- */
-:-ms-input-placeholder      {
+:-ms-input-placeholder {
     font-family: 'Vollkorn';
     font-style: italic;
     font-weight: 400;
     font-size: 17px;
     line-height: 22px;
-    color: #FFFFFF;}
+    color: #FFFFFF;
+}
+.gwe{
+    display block;
+}
