@@ -128,5 +128,6 @@ background-color: #FFFFFF2E;
 }
 .main_banner {
     min-height: 391px;
-
+background-image: url("../images/IMAGE.jpg");
+    background-size: cover;
 }
