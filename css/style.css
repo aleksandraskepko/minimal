@@ -126,9 +126,7 @@ background-color: #FFFFFF2E;
     line-height: 22px;
     color: #FFFFFF;
 }
-.gwe{
-    display: block;
-}
-.forms{
-    display: inline-block;
+.main_banner {
+    min-height: 391px;
+
 }
