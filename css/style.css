@@ -173,3 +173,40 @@ background-image: url("../images/IMAGE.jpg");
     border-bottom: solid 2px #47474F;
     text-decoration: none;
 }
+.brands{
+    display: flex;
+    text-align: center;
+}
+.brands h2{
+    font:  23px/36px 'Montserrat';
+    text-transform: uppercase;
+    color: #333333;
+    margin-top: 79px;
+}
+.brands h2:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.09);
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 43px;
+}
+.bgr_img{
+    background-color: #F5F5F5;
+    padding: 50px 86px;
+    margin-left: 20px;
+}
+.brands h4 {
+    font: 16px/20px 'Montserrat';
+    text-transform: uppercase;
+    color: #333333;
+    margin: 38px 0 20px 0;
+}
+.brands p{
+    font: 15px/22px 'Vollkorn', serif;
+    color: #333333;
+    margin-bottom: 74px;
+    margin-left: 30px;
+}
