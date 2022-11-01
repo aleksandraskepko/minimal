@@ -23,7 +23,8 @@ header{
 .d_flex{
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+   flex-wrap: wrap;
 }
 #navbar{
     list-style: none;
@@ -247,7 +248,4 @@ background-image: url("../images/IMAGE.jpg");
     font: 14px/20px 'Vollkorn', serif;
     color: #333333;
     margin-bottom: 21px;
-}
-.projects .d_flex:last-of-type{
-    margin-bottom: 89px;
 }
