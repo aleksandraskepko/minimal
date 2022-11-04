@@ -180,6 +180,10 @@ background-image: url("../images/IMAGE.jpg");
 .brands article {
     max-width: 300px;
 }
+.brands img {
+    display: block;
+    width: 100%;
+}
 .brands h2{
     font:  23px/36px 'Montserrat';
     text-transform: uppercase;
@@ -220,6 +224,10 @@ background-image: url("../images/IMAGE.jpg");
     background-color: #FFFFFF;
     max-width: 300px;
     margin-bottom: 20px;
+}
+.projects img {
+    display: block;
+    width: 100%;
 }
 .projects h2 {
     font: 23px/36px 'Montserrat';
