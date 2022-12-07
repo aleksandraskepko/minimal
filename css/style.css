@@ -235,6 +235,194 @@ h1:after {
   margin-bottom: 21px;
 }
 
+.team {
+  padding: 79px 0 100px;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .team {
+    padding: 80px 0 30px;
+  }
+  .team .d_flex {
+    justify-content: space-around;
+  }
+}
+.team h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.team h2:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.09);
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 43px;
+}
+.team h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+.team p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 29px;
+}
+.team .people article {
+  max-width: 220px;
+}
+@media screen and (max-width: 834px) {
+  .team .people article {
+    margin-bottom: 60px;
+  }
+}
+.team .people img {
+  display: block;
+  width: 100%;
+}
+.team .social_media {
+  display: flex;
+  justify-content: center;
+}
+.team .social_media li {
+  margin-right: 6px;
+}
+
+.in_touch {
+  background-image: url("../images/blue_bg.jpg");
+  padding: 79px 0 75px;
+  text-align: center;
+}
+@media screen and (max-width: 428px) {
+  .in_touch {
+    padding: 65px 0 35px;
+  }
+}
+.in_touch .contacts article {
+  max-width: 195px;
+}
+@media screen and (max-width: 428px) {
+  .in_touch .contacts article {
+    margin-bottom: 50px;
+  }
+}
+.in_touch .contacts article .socials {
+  margin-top: 20px;
+  margin-left: 30px;
+  text-align: left;
+}
+.in_touch .contacts article .socials li {
+  margin-bottom: 11px;
+}
+.in_touch .contacts article .socials li a {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #212121;
+  text-decoration: none;
+}
+.in_touch .contacts article .socials li:first-of-type:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/fb.svg");
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+}
+.in_touch .contacts article .socials li:nth-child(2):before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/tw.svg");
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+}
+.in_touch .contacts article .socials li:last-of-type:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/linkdin.svg");
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+}
+.in_touch .contacts article .mail {
+  text-decoration: none;
+  color: #212121;
+}
+.in_touch .contacts img {
+  display: inline-block;
+}
+.in_touch .d_flex {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.in_touch h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.in_touch h2:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.09);
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 43px;
+}
+.in_touch h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+.in_touch p {
+  font-family: "Vollkorn", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #212121;
+  margin-top: 20px;
+}
+
 footer {
   background-color: #000000;
   padding: 69px 0 75px;
@@ -339,39 +527,6 @@ footer {
   font-size: 17px;
   line-height: 22px;
   color: #FFFFFF;
-}
-
-.owl-stage {
-  display: flex;
-  align-items: center;
-}
-
-.owl-item {
-  text-align: center;
-}
-
-.owl-nav .owl-prev:before {
-  font-weight: 900;
-  font-family: "Font Awesome 6 Free";
-  content: "\f053";
-  display: inline-block;
-  font-size: 30px;
-  color: #47474F;
-  position: absolute;
-  top: 90px;
-  left: -40px;
-}
-.owl-nav .owl-next:before {
-  font-weight: 900;
-  font-family: "Font Awesome 6 Free";
-  content: "\f053";
-  display: inline-block;
-  font-size: 30px;
-  color: #47474F;
-  position: absolute;
-  top: 90px;
-  right: -40px;
-  rotate: 180deg;
 }
 
 a {

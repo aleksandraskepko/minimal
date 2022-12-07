@@ -29,7 +29,7 @@ $viewport_size: (
 }
 #navbar {
   list-style: none;
-  display: flex
+  display: flex;
 }
 header {
   padding: 18px 0;
@@ -217,11 +217,208 @@ h1 {
     margin-bottom: 4px;
   }
   h5{
-    font: 14px/20px 'Vollkorn', serif;
+    font: 14px/20px $main_paragraph_font;
     color: $main_font_color;
     margin-bottom: 21px;
   }
 }
+
+.team {
+  padding: 79px 0 100px;
+  text-align: center;
+  @include max-screen(834px){
+    padding: 80px 0 30px;
+    .d_flex {
+      justify-content: space-around;
+    }
+  ;
+  }
+  h2 {
+    font-family: $main_title_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_font_color;
+    &:after{
+      content: "";
+      display: block;
+      width: 80px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.09);
+      margin: auto;
+      margin-top: 28px;
+      margin-bottom: 43px;
+    }
+  }
+  h4 {
+    font-family: $main_title_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_font_color;
+    margin-bottom: 6px;
+    margin-top: 20px;
+  }
+  p {
+    font-family: $main_paragraph_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: $main_font_color;
+    margin-bottom: 29px;
+  }
+  .people {
+    article {
+      max-width: 220px;
+      @include max-screen(834px){
+        margin-bottom: 60px;
+      }
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .social_media {
+    display: flex;
+    justify-content: center;
+    li {
+      margin-right: 6px;
+    }
+  }
+}
+.in_touch {
+  background-image: url("../images/blue_bg.jpg");
+  padding: 79px 0 75px;
+  text-align: center;
+  @include max-screen(428px) {
+    padding: 65px 0 35px;
+  }
+  .contacts {
+    article {
+      max-width: 195px;
+      @include max-screen(428px){
+        margin-bottom: 50px;
+      }
+      .socials {
+        margin-top: 20px;
+        margin-left: 30px;
+        text-align: left;
+        li {
+          margin-bottom: 11px;
+          a {
+            font-family: $main_paragraph_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
+            color: #212121;
+            text-decoration: none;
+          }
+          &:first-of-type {
+            &:before {
+              content: "";
+              display: inline-block;
+              background-image: url("../images/fb.svg");
+              width: 14px;
+              height: 14px;
+              margin-right: 9px;
+            }
+          }
+          &:nth-child(2) {
+            &:before {
+              content: "";
+              display: inline-block;
+              background-image: url("../images/tw.svg");
+              width: 14px;
+              height: 14px;
+              margin-right: 9px;
+            }
+          }
+          &:last-of-type {
+            &:before {
+              content: "";
+              display: inline-block;
+              background-image: url("../images/linkdin.svg");
+              width: 14px;
+              height: 14px;
+              margin-right: 9px;
+            }
+          }
+        }
+      }
+      .mail {
+        text-decoration: none;
+        color: #212121;
+      }
+    }
+    img {
+      display: inline-block;
+    }
+  }
+  .d_flex {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  h2 {
+    font-family: $main_title_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_font_color;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.09);
+      margin: auto;
+      margin-top: 28px;
+      margin-bottom: 43px;
+    }
+  }
+
+  h4 {
+    font-family: $main_title_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_font_color;
+    margin-bottom: 6px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-family: $main_paragraph_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #212121;
+    margin-top: 20px;
+  }
+}
+
+
+
 footer {
   background-color: #000000;
   padding: 69px 0 75px;
@@ -238,7 +435,7 @@ footer {
   box-sizing: border-box;
   border: none;
   width: 100%;
-  font: 17px/22px 'Vollkorn', serif;
+  font: 17px/22px $main_paragraph_font;
   color: #FFFFFF;
   &:focus{
     outline: none;
@@ -258,7 +455,7 @@ footer {
   background-color: #FFFFFF33;
 }
 .send_btn{
-  font: 17px/22px 'Vollkorn', serif;
+  font: 17px/22px $main_paragraph_font;
   font-style: italic;
   color: #8BCAC3;
   border:1px solid #7EC4BD;
@@ -278,7 +475,7 @@ footer {
   margin: 37px 0 14px;
 }
 .paragraph{
-  font: 15px/22px  'Vollkorn', serif;
+  font: 15px/22px  $main_paragraph_font;
   color: rgba(255, 255, 255, 0.4);
 }
 ::-webkit-input-placeholder {
@@ -310,44 +507,6 @@ footer {
   line-height: 22px;
   color: #FFFFFF;
 }
-.owl-stage {
-  display: flex;
-  align-items: center;
-}
-.owl-item {
-  text-align: center;
-}
-.owl-nav {
-  .owl-prev {
-    &:before {
-    font-weight: 900;
-    font-family: "Font Awesome 6 Free";
-    content: "\f053";
-      display: inline-block;
-      font-size: 30px;
-      color: #47474F;
-      position: absolute;
-      top: 90px;
-      left: -40px;
-  }
-  }
-  .owl-next {
-    &:before {
-      font-weight: 900;
-      font-family: "Font Awesome 6 Free";
-      content: "\f053";
-      display: inline-block;
-      font-size: 30px;
-      color: #47474F;
-      position: absolute;
-      top: 90px;
-      right: -40px;
-      rotate: 180deg;
-    }
-  }
-}
-
-
 
 a {
   cursor: pointer;
