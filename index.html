@@ -6,11 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Minimal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,7 +16,7 @@
         <img src="images/logo.svg" alt="logo">
         </a>
         <nav>
-            <ul id="navbar" >
+            <ul class="menu desktop">
                 <li><a href="#">procces</a>
                 </li>
                 <li>
@@ -33,9 +29,22 @@
                     <a href="#">contact</a>
                 </li>
             </ul>
+            <a class="menu__icon mobile"><span></span></a>
+            <ul class="menu mobile">
+                <li><a href="" class="menu__item">process</a></li>
+                <li><a href="" class="menu__item">projects</a></li>
+                <li><a href="" class="menu__item">team</a></li>
+                <li><a href="" class="menu__item">contact</a></li>
+            </ul>
         </nav>
+<!--        <nav>-->
+<!--            <ul id="navbar" >-->
+
+<!--            </ul>-->
+<!--        </nav>-->
     </div>
 </header>
+
     <main>
         <section class="main_banner">
 <div class="container">
@@ -57,7 +66,7 @@
         <section class="brands">
             <div class="container">
                 <h2>How we make brands thrive</h2>
-                <div class="d_flex owl-carousel">
+                <div class="d_flex">
                     <article>
                         <div class="bgr_img"><img src="images/target.svg"></div>
                         <h4>SET a target</h4>
@@ -158,9 +167,8 @@
     </h3>
         </div>
     </footer>
+<script src="https://kit.fontawesome.com/51c5140800.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
