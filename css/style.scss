@@ -454,6 +454,14 @@ h1 {
        text-align: center;
        color:$main_font_color;
        margin-bottom: 24px;
+       @include max-screen(428px){
+         font-size: 20px;
+         line-height: 30px;
+       }
+       @include max-screen(360px){
+         font-size: 18px;
+         line-height: 28px;
+       }
      }
      h4 {
        font-family: $main_title_font;
@@ -464,6 +472,9 @@ h1 {
        text-align: center;
        text-transform: uppercase;
        color: #ABABAB;
+       @include max-screen(428px){
+         font-size: 12px;
+       }
      }
      img {
        margin-bottom: 10px;
@@ -474,13 +485,57 @@ h1 {
      position: absolute;
      bottom: 98px;
      margin: auto;
-     left: 328px;
+     left: 276px;
+     @include max-screen(1326px){
+       left: 285px;
+     }
+     @include max-screen(1280px){
+       left: 260px;
+     }
+     @include max-screen(1024px){
+       left: 120px;
+     }
+     @include max-screen(834px){
+       left: 25px;
+     }
+     @include max-screen(428px){
+       max-width: 175px;
+       left: 10px;
+       bottom: 85px;
+     }
+     @include max-screen(360px){
+       max-width: 165px;
+       left: 7px;
+
+     }
    }
    .reviewer_2 {
      max-width: 309px;
      position: absolute;
-     right: 341px;
+     right: 271px;
      bottom: 98px;
+     @include max-screen(1326px){
+       right: 300px;
+     }
+     @include max-screen(1280px){
+       right: 280px;
+     }
+     @include max-screen(1024px){
+       right: 130px;
+     }
+     @include max-screen(834px){
+       right: 40px;
+
+     }
+     @include max-screen(428px){
+       max-width: 160px;
+       right: 15px;
+       bottom: 85px;
+     }
+     @include max-screen(360px){
+       max-width: 150px;
+       right: 10px;
+     }
    }
  }
 }

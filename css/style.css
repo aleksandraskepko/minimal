@@ -462,6 +462,18 @@ h1:after {
   color: #333333;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 428px) {
+  .reviews .d_flex .reviewer_1 h3, .reviews .d_flex .reviewer_2 h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .reviews .d_flex .reviewer_1 h3, .reviews .d_flex .reviewer_2 h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 .reviews .d_flex .reviewer_1 h4, .reviews .d_flex .reviewer_2 h4 {
   font-family: "Montserrat";
   font-style: normal;
@@ -472,6 +484,11 @@ h1:after {
   text-transform: uppercase;
   color: #ABABAB;
 }
+@media screen and (max-width: 428px) {
+  .reviews .d_flex .reviewer_1 h4, .reviews .d_flex .reviewer_2 h4 {
+    font-size: 12px;
+  }
+}
 .reviews .d_flex .reviewer_1 img, .reviews .d_flex .reviewer_2 img {
   margin-bottom: 10px;
 }
@@ -480,13 +497,79 @@ h1:after {
   position: absolute;
   bottom: 98px;
   margin: auto;
-  left: 328px;
+  left: 276px;
+}
+@media screen and (max-width: 1326px) {
+  .reviews .d_flex .reviewer_1 {
+    left: 285px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .reviews .d_flex .reviewer_1 {
+    left: 260px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .reviews .d_flex .reviewer_1 {
+    left: 120px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .reviews .d_flex .reviewer_1 {
+    left: 25px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .reviews .d_flex .reviewer_1 {
+    max-width: 175px;
+    left: 10px;
+    bottom: 85px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .reviews .d_flex .reviewer_1 {
+    max-width: 165px;
+    left: 7px;
+  }
 }
 .reviews .d_flex .reviewer_2 {
   max-width: 309px;
   position: absolute;
-  right: 341px;
+  right: 271px;
   bottom: 98px;
+}
+@media screen and (max-width: 1326px) {
+  .reviews .d_flex .reviewer_2 {
+    right: 300px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .reviews .d_flex .reviewer_2 {
+    right: 280px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .reviews .d_flex .reviewer_2 {
+    right: 130px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .reviews .d_flex .reviewer_2 {
+    right: 40px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .reviews .d_flex .reviewer_2 {
+    max-width: 160px;
+    right: 15px;
+    bottom: 85px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .reviews .d_flex .reviewer_2 {
+    max-width: 150px;
+    right: 10px;
+  }
 }
 
 footer {
