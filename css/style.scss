@@ -297,6 +297,8 @@ h1 {
 }
 .in_touch {
   background-image: url("../images/blue_bg.jpg");
+  background-size: cover;
+  min-height: 517px;
   padding: 79px 0 75px;
   text-align: center;
   @include max-screen(428px) {
@@ -304,13 +306,13 @@ h1 {
   }
   .contacts {
     article {
-      max-width: 195px;
+      max-width: 205px;
       @include max-screen(428px){
         margin-bottom: 50px;
       }
       .socials {
         margin-top: 20px;
-        margin-left: 30px;
+        margin-left: 45px;
         text-align: left;
         li {
           margin-bottom: 11px;
@@ -361,13 +363,18 @@ h1 {
         color: #212121;
       }
     }
+    .bgr_img {
+      background-color: unset;
+      padding: 30px 60px 0;
+    }
     img {
-      display: inline-block;
+      display: block;
+      width: 100%;
     }
   }
   .d_flex {
-    justify-content: space-around;
     align-items: flex-start;
+    justify-content: space-around;
   }
 
   h2 {
@@ -417,7 +424,66 @@ h1 {
   }
 }
 
-
+.reviews {
+  background: #F5F5F5;
+  min-height: 511px;
+  position: relative;
+ .d_flex {
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   .quotes {
+     margin-top: 69px;
+     &:after{
+       content: "";
+       display: block;
+       width: 2px;
+       height: 215px;
+       background-color: rgba(0, 0, 0, 0.04);
+       margin: auto;
+       margin-top: 66px;
+     }
+   }
+   .reviewer_1, .reviewer_2 {
+     h3 {
+       font-family: $main_paragraph_font;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 26px;
+       line-height: 33px;
+       text-align: center;
+       color:$main_font_color;
+       margin-bottom: 24px;
+     }
+     h4 {
+       font-family: $main_title_font;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 20px;
+       text-align: center;
+       text-transform: uppercase;
+       color: #ABABAB;
+     }
+     img {
+       margin-bottom: 10px;
+     }
+   }
+   .reviewer_1 {
+     max-width: 339px;
+     position: absolute;
+     bottom: 98px;
+     margin: auto;
+     left: 328px;
+   }
+   .reviewer_2 {
+     max-width: 309px;
+     position: absolute;
+     right: 341px;
+     bottom: 98px;
+   }
+ }
+}
 
 footer {
   background-color: #000000;
