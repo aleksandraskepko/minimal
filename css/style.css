@@ -44,10 +44,14 @@ header nav li a {
   text-decoration: none;
   display: inline-block;
   transition: 0.5s;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
 }
 @media screen and (max-width: 834px) {
   header nav li a {
     font: 24px/28px "Montserrat";
+    animation: unset;
   }
 }
 @media screen and (max-width: 428px) {
@@ -64,6 +68,16 @@ header nav li a:hover {
   transform: rotate(360deg);
 }
 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .main_banner {
   min-height: 391px;
   background-image: url("../images/IMAGE.jpg");
@@ -191,6 +205,11 @@ h1:after {
   background-color: #FFFFFF;
   max-width: 300px;
   margin-bottom: 20px;
+  transition: transform 0.25s;
+  overflow: hidden;
+}
+.projects article:hover {
+  transform: scale(1.1);
 }
 @media screen and (max-width: 834px) {
   .projects article {
@@ -304,11 +323,21 @@ h1:after {
 .team .social_media {
   display: flex;
   justify-content: center;
+  animation: 2s show ease;
+  animation-iteration-count: 3;
 }
 .team .social_media li {
   margin-right: 6px;
 }
 
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .in_touch {
   background-image: url("../images/blue_bg.jpg");
   background-size: cover;
