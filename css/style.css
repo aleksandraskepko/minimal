@@ -61,18 +61,19 @@ header nav li a {
 }
 @media screen and (max-width: 834px) {
   header nav li a {
-    font: 24px/28px "Montserrat";
+    font: 30px/34px "Montserrat";
     animation: unset;
+    text-decoration: underline;
   }
 }
 @media screen and (max-width: 428px) {
   header nav li a {
-    font: 16px/24px "Montserrat";
+    font: 24px/28px "Montserrat";
   }
 }
 @media screen and (max-width: 360px) {
   header nav li a {
-    font: 14px/22px "Montserrat";
+    font: 22px/26px "Montserrat";
   }
 }
 header nav li a:hover {
@@ -147,12 +148,17 @@ h1:after {
   border: solid 1px #47474F;
   border-bottom: solid 2px #47474F;
   text-decoration: none;
+  transition: 2s;
+}
+.main_banner_description a:hover {
+  background-color: rgba(71, 71, 79, 0.43);
+  color: #FEFEC9;
 }
 
 .brands {
   text-align: center;
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 992px) {
   .brands .d_flex {
     justify-content: space-around;
   }
@@ -202,12 +208,12 @@ h1:after {
   text-align: center;
   padding: 79px 0 74px;
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 992px) {
   .projects .d_flex {
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 834px) and (max-width: 428px) {
+@media screen and (max-width: 992px) and (max-width: 428px) {
   .projects {
     padding: 59px 0 54px;
   }
@@ -269,7 +275,7 @@ h1:after {
   padding: 79px 0 100px;
   text-align: center;
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 992px) {
   .team {
     padding: 80px 0 30px;
   }
@@ -834,16 +840,11 @@ ul {
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 60px;
   background: rgba(245, 245, 245, 0.9);
   z-index: 10;
   transition: all 0.4s ease-in-out;
   transform: translateX(-100%);
-}
-@media screen and (max-width: 834px) {
-  .mobile.menu {
-    min-height: 30vh;
-  }
 }
 
 .menu_shown .mobile.menu {
@@ -852,8 +853,18 @@ ul {
 
 .mobile .menu__item {
   display: block;
-  line-height: 2;
+  line-height: 5;
   padding: 25px 0;
+}
+@media screen and (max-width: 428px) {
+  .mobile .menu__item {
+    line-height: 4;
+  }
+}
+@media screen and (max-width: 360px) {
+  .mobile .menu__item {
+    line-height: 3;
+  }
 }
 
 @media (min-width: 1200px) {

@@ -64,14 +64,15 @@ header {
         animation-name: slidein;
         animation-iteration-count: 1;
         @include max-screen(834px){
-          font: 24px/28px $main_title_font;
+          font: 30px/34px $main_title_font;
           animation: unset;
+          text-decoration: underline;
         }
         @include max-screen(428px){
-          font: 16px/24px $main_title_font;
+          font: 24px/28px $main_title_font;
         }
         @include max-screen(360px){
-          font: 14px/22px $main_title_font;
+          font: 22px/26px $main_title_font;
         }
         &:hover {
           transform: rotate(360deg);
@@ -142,11 +143,16 @@ h1 {
     border: solid 1px #47474F;
     border-bottom: solid 2px #47474F;
     text-decoration: none;
+    transition: 2s;
+    &:hover {
+      background-color: rgba(71, 71, 79, 0.43);
+      color: #FEFEC9;
+    }
   }
 }
 .brands{
   text-align: center;
-  @include max-screen(834px){
+  @include max-screen(992px){
     .d_flex {
     justify-content: space-around;
     }
@@ -194,7 +200,7 @@ h1 {
   background-color: #F5F5F5;
   text-align: center;
   padding: 79px 0 74px;
-  @include max-screen(834px){
+  @include max-screen(992px){
     .d_flex {
       justify-content: space-around;
     }
@@ -255,7 +261,7 @@ h1 {
 .team {
   padding: 79px 0 100px;
   text-align: center;
-  @include max-screen(834px){
+  @include max-screen(992px){
     padding: 80px 0 30px;
     .d_flex {
       justify-content: space-around;
@@ -770,14 +776,11 @@ ul {
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 60px;
   background: rgba(245, 245, 245, 0.9);
   z-index: 10;
   transition: all .4s ease-in-out;
   transform: translateX(-100%);
-  @include max-screen(834px){
-    min-height: 30vh;
-  }
 }
 
 .menu_shown .mobile.menu {
@@ -786,8 +789,14 @@ ul {
 
 .mobile .menu__item {
   display: block;
-  line-height: 2;
+  line-height: 5;
   padding: 25px 0;
+  @include max-screen(428px){
+    line-height: 4;
+  }
+  @include max-screen(360px){
+    line-height: 3;
+  }
 }
 
 @media (min-width: map-get($viewport_size, l)) {
