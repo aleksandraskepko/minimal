@@ -24,9 +24,20 @@
 header {
   padding: 18px 0;
 }
+header img {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+@media screen and (max-width: 834px) {
+  header img {
+    animation: unset;
+  }
+}
 @media screen and (max-width: 834px) {
   header img {
     margin-left: 30px;
+    transition: 0.5s;
   }
 }
 header nav li {
@@ -44,9 +55,9 @@ header nav li a {
   text-decoration: none;
   display: inline-block;
   transition: 0.5s;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: slidein;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
 }
 @media screen and (max-width: 834px) {
   header nav li a {
@@ -71,7 +82,7 @@ header nav li a:hover {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 200%;
   }
   to {
     margin-left: 0%;
@@ -329,6 +340,11 @@ h1:after {
 }
 .team .social_media li {
   margin-right: 6px;
+  transition: 1s;
+  text-align: center;
+}
+.team .social_media li:hover {
+  transform: scale(1.5);
 }
 
 @keyframes show {

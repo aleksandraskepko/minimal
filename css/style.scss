@@ -33,9 +33,18 @@ $viewport_size: (
 }
 header {
   padding: 18px 0;
+  img {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    @include max-screen(834px){
+      animation: unset;
+    }
+  }
   @include max-screen(834px){
     img {
       margin-left: 30px;
+      transition: 0.5s;
     }
   }
   nav {
@@ -51,9 +60,9 @@ header {
         text-decoration: none;
         display: inline-block;
         transition: 0.5s;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-name: slidein;
-        animation-iteration-count: 3;
+        animation-iteration-count: 1;
         @include max-screen(834px){
           font: 24px/28px $main_title_font;
           animation: unset;
@@ -74,7 +83,7 @@ header {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 200%;
   }
 
   to {
@@ -314,6 +323,11 @@ h1 {
     animation-iteration-count: 3;
     li {
       margin-right: 6px;
+      transition: 1s;
+      text-align: center;
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 }
