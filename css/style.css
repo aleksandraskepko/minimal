@@ -310,6 +310,7 @@ h1:after {
 }
 .team .people article {
   max-width: 220px;
+  animation: 5s show ease;
 }
 @media screen and (max-width: 834px) {
   .team .people article {
@@ -349,13 +350,16 @@ h1:after {
   .in_touch {
     padding: 65px 0 35px;
   }
+  .in_touch .container {
+    max-width: 300px;
+  }
 }
 .in_touch .contacts article {
   max-width: 205px;
 }
 @media screen and (max-width: 428px) {
   .in_touch .contacts article {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 .in_touch .contacts article .socials {
@@ -413,7 +417,7 @@ h1:after {
   width: 100%;
 }
 .in_touch .d_flex {
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-around;
 }
 .in_touch h2 {
@@ -435,6 +439,11 @@ h1:after {
   margin: auto;
   margin-top: 28px;
   margin-bottom: 43px;
+}
+@media screen and (max-width: 428px) {
+  .in_touch h2:after {
+    margin-bottom: 23px;
+  }
 }
 .in_touch h4 {
   font-family: "Montserrat";
@@ -585,6 +594,11 @@ h1:after {
 @media screen and (max-width: 834px) {
   .reviews .d_flex .reviewer_2 {
     right: 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .reviews .d_flex .reviewer_2 {
+    right: 2px;
   }
 }
 @media screen and (max-width: 428px) {

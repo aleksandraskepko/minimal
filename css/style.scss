@@ -297,6 +297,7 @@ h1 {
   .people {
     article {
       max-width: 220px;
+      animation: 5s show ease;
       @include max-screen(834px){
         margin-bottom: 60px;
       }
@@ -328,12 +329,15 @@ h1 {
   text-align: center;
   @include max-screen(428px) {
     padding: 65px 0 35px;
+    .container {
+      max-width: 300px;
+    }
   }
   .contacts {
     article {
       max-width: 205px;
       @include max-screen(428px){
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
       .socials {
         margin-top: 20px;
@@ -398,7 +402,7 @@ h1 {
     }
   }
   .d_flex {
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: space-around;
   }
 
@@ -421,6 +425,9 @@ h1 {
       margin: auto;
       margin-top: 28px;
       margin-bottom: 43px;
+      @include max-screen(428px){
+        margin-bottom: 23px;
+      }
     }
   }
 
@@ -551,6 +558,9 @@ h1 {
      @include max-screen(834px){
        right: 40px;
 
+     }
+     @include  max-screen(650px){
+       right: 2px;
      }
      @include max-screen(428px){
        max-width: 160px;
