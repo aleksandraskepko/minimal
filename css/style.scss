@@ -484,6 +484,9 @@ h1 {
    text-align: center;
    align-items: center;
    justify-content: center;
+   @include max-screen(428px){
+     flex-direction: column;
+   }
    .quotes {
      margin-top: 69px;
      &:after{
@@ -494,6 +497,10 @@ h1 {
        background-color: rgba(0, 0, 0, 0.04);
        margin: auto;
        margin-top: 66px;
+       @include max-screen(428px){
+         height: 100px;
+         margin-top: 33px;
+       }
      }
    }
    .reviewer_1, .reviewer_2 {
@@ -552,14 +559,11 @@ h1 {
      }
      @include max-screen(428px){
        max-width: 175px;
-       left: 10px;
-       bottom: 85px;
+       position: unset;
+       margin-top: 40px;
+       margin-bottom: 30px;
      }
-     @include max-screen(360px){
-       max-width: 165px;
-       left: 7px;
 
-     }
    }
    .reviewer_2 {
      max-width: 309px;
@@ -584,12 +588,8 @@ h1 {
      }
      @include max-screen(428px){
        max-width: 160px;
-       right: 15px;
-       bottom: 85px;
-     }
-     @include max-screen(360px){
-       max-width: 150px;
-       right: 10px;
+       position: unset;
+       margin-bottom: 80px;
      }
    }
  }

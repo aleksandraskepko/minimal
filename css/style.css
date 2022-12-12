@@ -500,6 +500,11 @@ h1:after {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 428px) {
+  .reviews .d_flex {
+    flex-direction: column;
+  }
+}
 .reviews .d_flex .quotes {
   margin-top: 69px;
 }
@@ -511,6 +516,12 @@ h1:after {
   background-color: rgba(0, 0, 0, 0.04);
   margin: auto;
   margin-top: 66px;
+}
+@media screen and (max-width: 428px) {
+  .reviews .d_flex .quotes:after {
+    height: 100px;
+    margin-top: 33px;
+  }
 }
 .reviews .d_flex .reviewer_1 h3, .reviews .d_flex .reviewer_2 h3 {
   font-family: "Vollkorn", serif;
@@ -582,14 +593,9 @@ h1:after {
 @media screen and (max-width: 428px) {
   .reviews .d_flex .reviewer_1 {
     max-width: 175px;
-    left: 10px;
-    bottom: 85px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .reviews .d_flex .reviewer_1 {
-    max-width: 165px;
-    left: 7px;
+    position: unset;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 }
 .reviews .d_flex .reviewer_2 {
@@ -626,14 +632,8 @@ h1:after {
 @media screen and (max-width: 428px) {
   .reviews .d_flex .reviewer_2 {
     max-width: 160px;
-    right: 15px;
-    bottom: 85px;
-  }
-}
-@media screen and (max-width: 360px) {
-  .reviews .d_flex .reviewer_2 {
-    max-width: 150px;
-    right: 10px;
+    position: unset;
+    margin-bottom: 80px;
   }
 }
 
